@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nouveau post</title>
+</head>
+<body>
+    <h1>Nouvel article</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="title">Titre:</label>
+        <input type="text" name="title" id="title">
+        <label for="content">Contenue:</label>
+        <textarea name="content" id="content"></textarea>
+        <button type="submit">Créer</button>
+    </form>
+    <a href="/">Retour au blog </a>
+</body>
+</html>
