@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="form-container">
+    <h2>{% if action == 'edit' %}Modifier{% else %}Créer{% endif %} un article</h2>
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="form-actions">
+            <button type="submit" class="submit-btn">Enregistrer</button>
+            <a href="{% url 'post_list' %}" class="cancel-btn">Annuler</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

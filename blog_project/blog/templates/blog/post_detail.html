@@ -6,14 +6,13 @@
     <article class="single-post">
         <div class="post-header">
             {% if post.category %}
-            <div class="post-category">{{ post.category }}</div>
+            <div class="post-category">{{ post.category.name }}</div>
             {% endif %}
             
             <h1 class="post-title">{{ post.title }}</h1>
             
             <div class="post-meta">
                 <div class="author-info">
-                    <div class="author-avatar"></div>
                     <span>{{ post.author.username }}</span>
                 </div>
                 <span>•</span>
@@ -26,6 +25,13 @@
         <div class="post-content">
             {{ post.content|linebreaks }}
         </div>
+
+        {% if user.is_authenticated and post.author == user %}
+        <div class="post-actions">
+            <a href="{% url 'post_edit' post.slug %}" class="edit-btn">Modifier</a>
+            <a href="{% url 'post_delete' post.slug %}" class="delete-btn">Supprimer</a>
+        </div>
+        {% endif %}
     </article>
 </div>
 {% endblock %}
