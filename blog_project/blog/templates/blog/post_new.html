@@ -1,18 +1,33 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Nouveau post</title>
+    <title>Créer un article</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <h1>Nouvel article</h1>
-    <form method="POST">
-        {% csrf_token %}
-        <label for="title">Titre:</label>
-        <input type="text" name="title" id="title">
-        <label for="content">Contenue:</label>
-        <textarea name="content" id="content"></textarea>
-        <button type="submit">Créer</button>
-    </form>
-    <a href="/">Retour au blog </a>
+    <div class="container">
+        <nav>
+            <a href="{% url 'post_list' %}" class="back-link">← Retour à la liste</a>
+        </nav>
+
+        <h1>Créer un nouvel article</h1>
+
+        {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+            <div class="message {% if message.tags %}{{ message.tags }}{% endif %}">
+                {{ message }}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <form method="POST" class="post-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="submit-button">Créer l'article</button>
+        </form>
+    </div>
 </body>
 </html>

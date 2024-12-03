@@ -1,12 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
     <h1>{{ post.title }}</h1>
+    <p>Catégorie : {{ post.category }}</p>
+    <p>Auteur : {{ post.author.username }}</p>
+    <p>Publié le : {{ post.created_at }}</p>
     <p>{{ post.content }}</p>
-    <p>Published on: {{ post.created_at }}</p>
-    <a href="/">Back to Blog</a>
+    <a href="/">Retour à la liste</a>
 </body>
 </html>
