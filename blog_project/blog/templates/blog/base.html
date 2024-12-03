@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}MonBlog{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">Blog Django Cour</a>
+            <div class="nav-links">
+                <a href="/">Accueil</a>
+                <a href="{% url 'post_new' %}">Nouveau Post</a>
+                {% if user.is_authenticated %}
+                    <a href="{% url 'admin:logout' %}">Déconnexion</a>
+                {% else %}
+                    <a href="{% url 'admin:login' %}">Connexion</a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    {% block hero %}{% endblock %}
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
