@@ -1578,3 +1578,14 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'se
 [INFO] 2024-12-04 17:17:38,711 basehttp "GET /en/ HTTP/1.1" 200 4086
 [INFO] 2024-12-04 17:17:41,710 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
 [INFO] 2024-12-04 17:17:41,848 basehttp "GET /fr/ HTTP/1.1" 200 4106
+[INFO] 2024-12-04 22:03:21,240 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:03:23,410 basehttp "GET / HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:03:23,793 basehttp "GET /fr/ HTTP/1.1" 200 4106
+[INFO] 2024-12-04 22:03:23,862 basehttp "GET /static/css/styles.css HTTP/1.1" 304 0
+[WARNING] 2024-12-04 22:03:24,670 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 22:03:24,670 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 22:03:26,510 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:03:26,981 basehttp "GET /en/ HTTP/1.1" 200 4086
+[INFO] 2024-12-04 22:03:29,157 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:03:29,569 basehttp "GET /fr/ HTTP/1.1" 200 4106
+[INFO] 2024-12-04 22:10:09,420 autoreload Watching for file changes with StatReloader
