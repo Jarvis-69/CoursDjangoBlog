@@ -301,3 +301,24 @@ HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_a
 [INFO] 2024-12-04 11:45:03,294 autoreload Watching for file changes with StatReloader
 [INFO] 2024-12-04 11:56:01,458 views Accès à la liste des articles
 [INFO] 2024-12-04 11:56:01,736 basehttp "GET / HTTP/1.1" 200 2650
+[INFO] 2024-12-04 12:14:18,116 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\models.py changed, reloading.
+[INFO] 2024-12-04 12:14:19,438 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 12:14:24,229 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\forms.py changed, reloading.
+[INFO] 2024-12-04 12:14:24,933 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 12:14:26,367 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\forms.py changed, reloading.
+[INFO] 2024-12-04 12:14:27,492 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 12:14:39,351 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py changed, reloading.
+[INFO] 2024-12-04 12:14:40,098 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 12:14:48,761 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\urls.py changed, reloading.
+[INFO] 2024-12-04 12:14:49,756 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 12:18:29,662 basehttp "GET / HTTP/1.1" 200 3287
+[INFO] 2024-12-04 12:18:34,267 basehttp "GET / HTTP/1.1" 200 3129
+[INFO] 2024-12-04 12:18:38,331 basehttp "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 12:18:38,524 basehttp "GET / HTTP/1.1" 200 3118
+[INFO] 2024-12-04 12:18:40,735 basehttp "GET /login/ HTTP/1.1" 200 1874
+[INFO] 2024-12-04 12:18:45,421 basehttp "POST /login/ HTTP/1.1" 200 2024
+[INFO] 2024-12-04 12:18:49,294 basehttp "POST /login/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 12:18:49,481 basehttp "GET / HTTP/1.1" 200 3129
+[INFO] 2024-12-04 12:18:52,743 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:18:52,894 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 12:18:52,899 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653

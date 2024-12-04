@@ -1,4 +1,3 @@
-Voici un exemple de fichier README.md stylé pour votre projet de blog Django :
 
   
 
