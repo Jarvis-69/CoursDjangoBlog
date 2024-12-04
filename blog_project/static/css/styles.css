@@ -162,3 +162,98 @@ body {
         font-size: 24px;
     }
 }
+
+/* Formulaire principal */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+}
+
+.form-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacement entre les champs */
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacement entre le label et l'input */
+}
+
+.form-label {
+    width: 120px; /* Largeur fixe pour les labels */
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-control {
+    flex: 1; /* Prend tout l'espace disponible */
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #1a73e8;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(26, 115, 232, 0.2);
+}
+
+textarea.form-control {
+    resize: none; /* Empêche le redimensionnement manuel */
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between; /* Boutons alignés à gauche et à droite */
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #155db2;
+}
+
+.btn-secondary {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #e0e0e0;
+}

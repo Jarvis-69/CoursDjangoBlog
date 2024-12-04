@@ -4,28 +4,33 @@
 
 {% block content %}
 <div class="form-container">
-    <h1>Créer un nouvel article</h1>
+    <h1 class="form-title">Créer un nouvel article</h1>
 
     <form method="POST" class="post-form">
         {% csrf_token %}
+        
+        <!-- Champ Titre -->
         <div class="form-group">
-            <label for="title">Titre:</label>
-            <input type="text" id="title" name="title" class="form-control" required>
+            <label for="title" class="form-label">Titre :</label>
+            <input type="text" id="title" name="title" class="form-control" placeholder="Entrez le titre de l'article" required>
         </div>
-
+        
+        <!-- Champ Contenu -->
         <div class="form-group">
-            <label for="content">Contenu:</label>
-            <textarea id="content" name="content" class="form-control" rows="10" required></textarea>
+            <label for="content" class="form-label">Contenu :</label>
+            <textarea id="content" name="content" class="form-control" rows="10" placeholder="Rédigez le contenu de l'article" required></textarea>
         </div>
-
+        
+        <!-- Champ Catégorie -->
         <div class="form-group">
-            <label for="category">Catégorie:</label>
-            <input type="text" id="category" name="category" class="form-control">
+            <label for="category" class="form-label">Catégorie :</label>
+            <input type="text" id="category" name="category" class="form-control" placeholder="Catégorie de l'article">
         </div>
-
+        
+        <!-- Actions -->
         <div class="form-actions">
-            <button type="submit" class="submit-button">Créer l'article</button>
-            <a href="/" class="cancel-button">Annuler</a>
+            <button type="submit" class="btn btn-primary">Créer l'article</button>
+            <a href="/" class="btn btn-secondary">Annuler</a>
         </div>
     </form>
 </div>

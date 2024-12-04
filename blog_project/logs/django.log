@@ -1,0 +1,301 @@
+[INFO] 2024-12-04 11:26:19,158 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 11:26:20,958 views Accès à la liste des articles
+[ERROR] 2024-12-04 11:26:21,178 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: ERREUR:  la colonne blog_post.updated_at n'existe pas
+LINE 1: ... "blog_post"."content", "blog_post"."created_at", "blog_post...
+                                                             ^
+HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_at ».
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 15, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la colonne blog_post.updated_at n'existe pas
+LINE 1: ... "blog_post"."content", "blog_post"."created_at", "blog_post...
+                                                             ^
+HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_at ».
+
+[ERROR] 2024-12-04 11:26:21,189 basehttp "GET / HTTP/1.1" 500 204080
+[INFO] 2024-12-04 11:27:15,868 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 11:27:18,696 views Accès à la liste des articles
+[ERROR] 2024-12-04 11:27:18,959 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: ERREUR:  la colonne blog_post.updated_at n'existe pas
+LINE 1: ... "blog_post"."content", "blog_post"."created_at", "blog_post...
+                                                             ^
+HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_at ».
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 15, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la colonne blog_post.updated_at n'existe pas
+LINE 1: ... "blog_post"."content", "blog_post"."created_at", "blog_post...
+                                                             ^
+HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_at ».
+
+[ERROR] 2024-12-04 11:27:18,972 basehttp "GET / HTTP/1.1" 500 204080
+[INFO] 2024-12-04 11:28:25,510 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\models.py changed, reloading.
+[INFO] 2024-12-04 11:28:26,239 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 11:28:54,353 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\forms.py changed, reloading.
+[INFO] 2024-12-04 11:28:55,082 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 11:29:21,009 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py changed, reloading.
+[INFO] 2024-12-04 11:29:21,777 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 11:31:59,531 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\forms.py changed, reloading.
+[INFO] 2024-12-04 11:32:00,319 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 11:32:18,023 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\urls.py changed, reloading.
+[INFO] 2024-12-04 11:32:18,719 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 11:34:41,250 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 11:34:42,861 views Accès à la liste des articles
+[INFO] 2024-12-04 11:34:43,036 basehttp "GET / HTTP/1.1" 200 2650
+[INFO] 2024-12-04 11:34:47,597 views Accès à la liste des articles
+[INFO] 2024-12-04 11:34:47,803 basehttp "GET / HTTP/1.1" 200 2650
+[INFO] 2024-12-04 11:34:49,205 basehttp "GET /post/new/ HTTP/1.1" 200 1829
+[INFO] 2024-12-04 11:35:08,058 views Nouvel article créé: Aston Martin par mohammed
+[INFO] 2024-12-04 11:35:08,059 basehttp "POST /post/new/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 11:35:08,241 views Consultation de l'article: Aston Martin
+[INFO] 2024-12-04 11:35:08,244 basehttp "GET /post/aston-martin/ HTTP/1.1" 200 1582
+[INFO] 2024-12-04 11:35:11,609 basehttp "GET /post/aston-martin/edit/ HTTP/1.1" 200 1864
+[INFO] 2024-12-04 11:35:14,057 views Article modifié: Aston Martin par mohammed
+[INFO] 2024-12-04 11:35:14,059 basehttp "POST /post/aston-martin/edit/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 11:35:14,236 views Consultation de l'article: Aston Martin
+[INFO] 2024-12-04 11:35:14,238 basehttp "GET /post/aston-martin/ HTTP/1.1" 200 1582
+[INFO] 2024-12-04 11:35:19,383 views Accès à la liste des articles
+[INFO] 2024-12-04 11:35:19,583 basehttp "GET / HTTP/1.1" 200 3288
+[WARNING] 2024-12-04 11:35:20,794 base Method Not Allowed (GET): /admin/logout/
+[WARNING] 2024-12-04 11:35:20,795 log Method Not Allowed: /admin/logout/
+[WARNING] 2024-12-04 11:35:20,795 basehttp "GET /admin/logout/ HTTP/1.1" 405 0
+[INFO] 2024-12-04 11:38:22,414 basehttp "GET /post/new/ HTTP/1.1" 200 1829
+[INFO] 2024-12-04 11:38:31,988 views Accès à la liste des articles
+[INFO] 2024-12-04 11:38:32,120 basehttp "GET / HTTP/1.1" 200 3288
+[INFO] 2024-12-04 11:40:12,420 views Accès à la liste des articles
+[INFO] 2024-12-04 11:40:12,558 basehttp "GET / HTTP/1.1" 200 3288
+[INFO] 2024-12-04 11:40:16,099 basehttp "GET /admin/ HTTP/1.1" 200 6191
+[INFO] 2024-12-04 11:40:16,278 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 11:40:16,291 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 11:40:16,291 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 11:40:16,293 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 11:40:16,293 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 11:40:16,294 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 11:40:16,297 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 11:40:16,300 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:16,300 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 11:40:16,300 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2024-12-04 11:40:22,595 basehttp "GET /admin/password_change/ HTTP/1.1" 200 7442
+[INFO] 2024-12-04 11:40:22,677 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:22,685 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:24,445 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 11:40:25,595 views Accès à la liste des articles
+[INFO] 2024-12-04 11:40:25,785 basehttp "GET / HTTP/1.1" 200 3288
+[INFO] 2024-12-04 11:40:26,853 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 11:40:28,863 views Accès à la liste des articles
+[INFO] 2024-12-04 11:40:29,065 basehttp "GET / HTTP/1.1" 200 3288
+[INFO] 2024-12-04 11:40:30,387 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 11:40:34,350 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11372
+[INFO] 2024-12-04 11:40:34,395 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+[INFO] 2024-12-04 11:40:34,418 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:34,419 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:34,420 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:34,420 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:34,421 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:34,422 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:34,424 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:34,424 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:34,429 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:34,438 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[INFO] 2024-12-04 11:40:34,582 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+[INFO] 2024-12-04 11:40:34,600 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:34,602 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[INFO] 2024-12-04 11:40:34,602 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 11:40:36,472 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 7661
+[INFO] 2024-12-04 11:40:36,662 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+[INFO] 2024-12-04 11:40:37,798 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11372
+[INFO] 2024-12-04 11:40:38,037 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+[INFO] 2024-12-04 11:40:48,009 basehttp "GET /admin/auth/user/add/ HTTP/1.1" 200 12267
+[INFO] 2024-12-04 11:40:48,033 basehttp "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:48,033 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:48,070 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:48,079 basehttp "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 11:40:48,181 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+[INFO] 2024-12-04 11:40:49,598 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11372
+[INFO] 2024-12-04 11:40:50,374 basehttp "GET /admin/auth/user/add/ HTTP/1.1" 200 12267
+[INFO] 2024-12-04 11:40:55,414 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11372
+[INFO] 2024-12-04 11:41:11,590 views Accès à la liste des articles
+[INFO] 2024-12-04 11:41:11,792 basehttp "GET / HTTP/1.1" 200 3288
+[INFO] 2024-12-04 11:41:16,712 views Consultation de l'article: Aston Martin
+[INFO] 2024-12-04 11:41:16,715 basehttp "GET /post/aston-martin/ HTTP/1.1" 200 1582
+[INFO] 2024-12-04 11:41:18,286 basehttp "GET /post/aston-martin/delete/ HTTP/1.1" 200 1178
+[INFO] 2024-12-04 11:41:19,583 views Article supprimé: Aston Martin par mohammed
+[INFO] 2024-12-04 11:41:19,584 basehttp "POST /post/aston-martin/delete/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 11:41:19,587 views Accès à la liste des articles
+[INFO] 2024-12-04 11:41:19,782 basehttp "GET / HTTP/1.1" 200 2650
+[INFO] 2024-12-04 11:41:22,103 views Accès à la liste des articles
+[INFO] 2024-12-04 11:41:22,306 basehttp "GET / HTTP/1.1" 200 2650
+[INFO] 2024-12-04 11:45:03,294 autoreload Watching for file changes with StatReloader
