@@ -322,3 +322,211 @@ HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_a
 [INFO] 2024-12-04 12:18:52,743 basehttp "GET /admin/ HTTP/1.1" 200 5974
 [INFO] 2024-12-04 12:18:52,894 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
 [INFO] 2024-12-04 12:18:52,899 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 12:19:34,971 basehttp "GET / HTTP/1.1" 200 3125
+[INFO] 2024-12-04 12:19:38,150 basehttp "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 12:19:38,583 basehttp "GET / HTTP/1.1" 200 3118
+[INFO] 2024-12-04 12:19:43,217 basehttp "GET / HTTP/1.1" 200 2949
+[INFO] 2024-12-04 12:20:00,447 basehttp "GET / HTTP/1.1" 200 2793
+[INFO] 2024-12-04 12:20:06,730 basehttp "GET /register/ HTTP/1.1" 200 3349
+[INFO] 2024-12-04 12:20:26,569 basehttp "POST /register/ HTTP/1.1" 200 3635
+[INFO] 2024-12-04 12:20:48,848 views Nouvel utilisateur inscrit: nhoss
+[INFO] 2024-12-04 12:20:48,850 basehttp "POST /register/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 12:20:49,029 basehttp "GET / HTTP/1.1" 200 3032
+[INFO] 2024-12-04 12:21:03,767 basehttp "GET /post/new/ HTTP/1.1" 200 2020
+[INFO] 2024-12-04 12:21:14,739 basehttp "POST /post/new/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 12:21:14,920 basehttp "GET /post/salut/ HTTP/1.1" 200 1932
+[INFO] 2024-12-04 12:21:18,896 basehttp "GET / HTTP/1.1" 200 3483
+[INFO] 2024-12-04 12:21:20,494 basehttp "GET /post/mercedes/ HTTP/1.1" 200 1584
+[INFO] 2024-12-04 12:21:25,437 basehttp "GET /post/salut/ HTTP/1.1" 200 1777
+[INFO] 2024-12-04 12:21:27,883 basehttp "GET /post/audi/ HTTP/1.1" 200 1576
+[INFO] 2024-12-04 12:21:32,292 basehttp "GET /post/salut/ HTTP/1.1" 200 1777
+[INFO] 2024-12-04 12:21:33,515 basehttp "GET /post/salut/delete/ HTTP/1.1" 200 1392
+[INFO] 2024-12-04 12:21:34,934 basehttp "POST /post/salut/delete/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 12:21:35,128 basehttp "GET / HTTP/1.1" 200 3036
+[INFO] 2024-12-04 12:21:36,882 basehttp "GET / HTTP/1.1" 200 2878
+[INFO] 2024-12-04 12:21:59,176 basehttp "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 12:21:59,463 basehttp "GET / HTTP/1.1" 200 2962
+[INFO] 2024-12-04 12:22:00,477 basehttp "GET /login/ HTTP/1.1" 200 1718
+[INFO] 2024-12-04 12:22:02,743 basehttp "POST /login/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 12:22:02,942 basehttp "GET / HTTP/1.1" 200 2969
+[INFO] 2024-12-04 12:22:05,375 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:25:26,667 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\models.py changed, reloading.
+[INFO] 2024-12-04 12:25:27,534 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 12:25:46,713 basehttp "GET / HTTP/1.1" 200 2969
+[INFO] 2024-12-04 12:25:48,327 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:25:51,448 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:25:55,232 basehttp "GET /post/new/ HTTP/1.1" 200 2111
+[INFO] 2024-12-04 12:26:03,127 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 12:26:05,653 basehttp "GET / HTTP/1.1" 200 2969
+[INFO] 2024-12-04 12:26:21,579 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:26:58,659 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 12:27:01,357 basehttp "GET / HTTP/1.1" 200 2969
+[INFO] 2024-12-04 12:27:05,024 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:27:06,582 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:27:10,329 basehttp "GET / HTTP/1.1" 200 2969
+[INFO] 2024-12-04 12:27:11,794 basehttp "GET /post/new/ HTTP/1.1" 200 2111
+[INFO] 2024-12-04 12:27:15,190 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:27:17,874 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11837
+[INFO] 2024-12-04 12:27:17,951 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[INFO] 2024-12-04 12:27:18,014 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[INFO] 2024-12-04 12:27:18,014 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[INFO] 2024-12-04 12:27:18,031 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+[INFO] 2024-12-04 12:27:18,104 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+[INFO] 2024-12-04 12:27:18,382 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+[INFO] 2024-12-04 12:27:18,426 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[INFO] 2024-12-04 12:27:18,437 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[INFO] 2024-12-04 12:27:18,440 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[INFO] 2024-12-04 12:27:18,442 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[INFO] 2024-12-04 12:27:18,444 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[INFO] 2024-12-04 12:27:19,501 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+[INFO] 2024-12-04 12:27:20,436 basehttp "GET /admin/auth/user/1/change/ HTTP/1.1" 200 22505
+[INFO] 2024-12-04 12:27:20,481 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+[INFO] 2024-12-04 12:27:20,481 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+[INFO] 2024-12-04 12:27:20,484 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15502
+[INFO] 2024-12-04 12:27:20,485 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+[INFO] 2024-12-04 12:27:20,618 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+[INFO] 2024-12-04 12:27:20,618 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+[INFO] 2024-12-04 12:27:20,620 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15502
+[INFO] 2024-12-04 12:27:20,705 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+[INFO] 2024-12-04 12:27:20,864 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[INFO] 2024-12-04 12:27:20,864 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[INFO] 2024-12-04 12:27:20,865 basehttp "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+[INFO] 2024-12-04 12:27:20,865 basehttp "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+[INFO] 2024-12-04 12:27:20,866 basehttp "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[INFO] 2024-12-04 12:27:27,282 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11837
+[INFO] 2024-12-04 12:31:18,931 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\models.py changed, reloading.
+[INFO] 2024-12-04 12:31:19,765 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 12:31:25,116 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:31:26,817 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:31:43,263 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:31:43,458 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 12:31:43,482 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 12:31:43,493 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 12:31:43,506 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 12:31:43,506 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 12:31:43,507 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 12:31:43,511 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 12:31:43,515 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 12:31:43,516 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[WARNING] 2024-12-04 12:31:43,682 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 12:31:43,683 basehttp "GET /favicon.ico HTTP/1.1" 404 4329
+[INFO] 2024-12-04 12:31:46,852 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 12:31:48,977 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:31:49,716 basehttp - Broken pipe from ('127.0.0.1', 55013)
+[INFO] 2024-12-04 12:31:49,916 basehttp - Broken pipe from ('127.0.0.1', 55016)
+[INFO] 2024-12-04 12:31:50,124 basehttp - Broken pipe from ('127.0.0.1', 55018)
+[INFO] 2024-12-04 12:31:50,338 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:31:50,631 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:31:59,538 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 12:32:03,720 basehttp "GET / HTTP/1.1" 200 2969
+[INFO] 2024-12-04 12:32:08,073 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:32:09,599 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:32:09,887 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 12:32:09,893 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 12:32:09,897 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 12:32:09,901 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 12:32:09,906 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 12:32:09,907 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 12:32:09,915 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 12:32:09,923 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 12:32:09,923 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[WARNING] 2024-12-04 12:32:10,072 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 12:32:10,073 basehttp "GET /favicon.ico HTTP/1.1" 404 4329
+[INFO] 2024-12-04 12:32:10,151 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:32:10,208 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 12:32:10,214 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 12:32:10,215 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 12:32:10,215 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 12:32:10,215 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 12:32:10,217 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 12:32:10,244 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 12:32:10,251 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2024-12-04 12:32:10,251 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 12:34:42,014 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:34:43,448 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:34:43,474 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 12:34:43,474 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 12:34:43,475 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 12:34:43,476 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 12:34:43,476 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 12:34:43,476 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 12:34:43,484 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 12:34:43,490 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 12:34:43,494 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[WARNING] 2024-12-04 12:34:43,640 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 12:34:43,641 basehttp "GET /favicon.ico HTTP/1.1" 404 4329
+[INFO] 2024-12-04 12:34:47,426 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 12:34:48,675 basehttp - Broken pipe from ('127.0.0.1', 55126)
+[INFO] 2024-12-04 12:34:48,912 basehttp - Broken pipe from ('127.0.0.1', 55128)
+[INFO] 2024-12-04 12:34:49,062 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:34:49,404 basehttp - Broken pipe from ('127.0.0.1', 55132)
+[INFO] 2024-12-04 12:34:49,714 basehttp - Broken pipe from ('127.0.0.1', 55135)
+[INFO] 2024-12-04 12:34:49,865 basehttp - Broken pipe from ('127.0.0.1', 55137)
+[INFO] 2024-12-04 12:34:50,063 basehttp - Broken pipe from ('127.0.0.1', 55139)
+[INFO] 2024-12-04 12:34:50,236 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:34:52,860 basehttp "GET /admin/auth/user/add/ HTTP/1.1" 200 12267
+[INFO] 2024-12-04 12:34:53,111 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+[INFO] 2024-12-04 12:34:55,108 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:36:17,081 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 12:36:19,895 basehttp "GET / HTTP/1.1" 200 2969
+[INFO] 2024-12-04 12:36:21,747 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:36:23,424 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:36:23,657 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 12:36:23,661 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 12:36:23,662 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 12:36:23,664 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 12:36:23,665 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 12:36:23,666 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 12:36:23,695 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 12:36:23,701 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 12:36:23,701 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[WARNING] 2024-12-04 12:36:23,858 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 12:36:23,860 basehttp "GET /favicon.ico HTTP/1.1" 404 4329
+[INFO] 2024-12-04 12:36:35,068 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:39:05,953 basehttp "GET /post/new/ HTTP/1.1" 200 2111
+[INFO] 2024-12-04 12:39:13,788 basehttp "POST /post/new/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 12:39:14,009 basehttp "GET /post/yhiojkpl/ HTTP/1.1" 200 2040
+[INFO] 2024-12-04 12:40:39,797 basehttp "GET / HTTP/1.1" 200 3591
+[INFO] 2024-12-04 12:40:41,282 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 12:40:45,841 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11837
+[INFO] 2024-12-04 12:40:46,145 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+[INFO] 2024-12-04 12:40:49,670 basehttp "GET /admin/auth/user/1/change/ HTTP/1.1" 200 22505
+[INFO] 2024-12-04 12:40:49,990 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8985
+[INFO] 2024-12-04 12:41:00,245 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11837
+[INFO] 2024-12-04 12:41:01,384 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 14:57:02,271 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[WARNING] 2024-12-04 14:57:02,682 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 14:57:02,682 basehttp "GET /favicon.ico HTTP/1.1" 404 4329
+[INFO] 2024-12-04 14:57:26,733 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\models.py changed, reloading.
+[INFO] 2024-12-04 14:57:28,009 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 14:57:30,457 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 14:57:31,296 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 14:57:36,644 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 14:57:39,664 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 14:57:40,298 basehttp - Broken pipe from ('127.0.0.1', 58625)
+[INFO] 2024-12-04 14:57:40,536 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 14:58:00,950 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 14:58:03,053 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 14:58:08,197 basehttp "GET / HTTP/1.1" 200 3591
+[INFO] 2024-12-04 14:58:08,242 basehttp "GET /static/css/styles.css HTTP/1.1" 304 0
+[INFO] 2024-12-04 14:58:10,312 basehttp "GET / HTTP/1.1" 200 3591
+[INFO] 2024-12-04 14:58:11,957 basehttp "GET /post/yhiojkpl/ HTTP/1.1" 200 1885
+[INFO] 2024-12-04 14:58:13,778 basehttp "GET /post/new/ HTTP/1.1" 200 2111
+[INFO] 2024-12-04 14:58:17,001 basehttp "GET /admin/ HTTP/1.1" 200 5974
+[INFO] 2024-12-04 14:58:18,347 basehttp "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 14:58:18,548 basehttp "GET / HTTP/1.1" 200 3584
+[INFO] 2024-12-04 14:58:20,895 basehttp "GET / HTTP/1.1" 200 3415
+[INFO] 2024-12-04 14:58:23,288 basehttp "GET /login/ HTTP/1.1" 200 1718
+[INFO] 2024-12-04 14:58:25,593 basehttp "POST /login/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 14:58:25,778 basehttp "GET / HTTP/1.1" 200 3591
+[INFO] 2024-12-04 14:58:26,766 basehttp "GET /login/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 14:58:28,488 basehttp "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 14:58:28,659 basehttp "GET / HTTP/1.1" 200 3584
+[INFO] 2024-12-04 14:58:29,834 basehttp "GET / HTTP/1.1" 200 3415
+[INFO] 2024-12-04 14:58:31,194 basehttp "GET / HTTP/1.1" 200 3415
+[INFO] 2024-12-04 14:58:33,102 basehttp "GET /login/ HTTP/1.1" 200 1718
+[INFO] 2024-12-04 14:58:34,113 basehttp "GET /register/ HTTP/1.1" 200 3349
+[INFO] 2024-12-04 14:59:20,540 basehttp "GET /register/ HTTP/1.1" 200 3349
+[INFO] 2024-12-04 14:59:21,314 basehttp "GET /login/ HTTP/1.1" 200 1718
+[INFO] 2024-12-04 14:59:23,135 basehttp "POST /login/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 14:59:23,337 basehttp "GET / HTTP/1.1" 200 3591
