@@ -4,6 +4,8 @@ from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.views import LoginView
 from django.contrib import messages
+from django.utils.translation import gettext as _
+from django.views.i18n import set_language
 from .models import Post, Category
 from .forms import PostForm, RegisterForm
 
@@ -19,8 +21,8 @@ def register_view(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            logger.info(f'Nouvel utilisateur inscrit: {user.username}')
-            messages.success(request, 'Compte créé avec succès!')
+            logger.info(f'{_("New user registered")}: {user.username}')
+            messages.success(request, _('Account created successfully!'))
             return redirect('post_list')
     else:
         form = RegisterForm()
@@ -46,7 +48,7 @@ def post_new(request):
             post = form.save(commit=False)
             post.author = request.user
             post.save()
-            messages.success(request, 'Article créé avec succès!')
+            messages.success(request, _('Post created successfully!'))
             return redirect('post_detail', slug=post.slug)
     else:
         form = PostForm()
@@ -56,14 +58,14 @@ def post_new(request):
 def post_edit(request, slug):
     post = get_object_or_404(Post, slug=slug)
     if request.user != post.author:
-        messages.error(request, "Vous n'avez pas la permission de modifier cet article")
+        messages.error(request, _("You don't have permission to edit this post"))
         return redirect('post_detail', slug=slug)
     
     if request.method == "POST":
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
             post = form.save()
-            messages.success(request, 'Article modifié avec succès!')
+            messages.success(request, _('Post updated successfully!'))
             return redirect('post_detail', slug=post.slug)
     else:
         form = PostForm(instance=post)
@@ -73,16 +75,16 @@ def post_edit(request, slug):
 def post_delete(request, slug):
     post = get_object_or_404(Post, slug=slug)
     if request.user != post.author:
-        messages.error(request, "Vous n'avez pas la permission de supprimer cet article")
+        messages.error(request, _("You don't have permission to delete this post"))
         return redirect('post_detail', slug=slug)
     
     if request.method == "POST":
         post.delete()
-        messages.success(request, 'Article supprimé avec succès!')
+        messages.success(request, _('Post deleted successfully!'))
         return redirect('post_list')
     return render(request, 'blog/post_delete.html', {'post': post})
 
 def logout_view(request):
     logout(request)
-    messages.success(request, 'Vous avez été déconnecté avec succès.')
+    messages.success(request, _('You have been logged out successfully.'))
     return redirect('post_list')

@@ -530,3 +530,1051 @@ HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_a
 [INFO] 2024-12-04 14:59:21,314 basehttp "GET /login/ HTTP/1.1" 200 1718
 [INFO] 2024-12-04 14:59:23,135 basehttp "POST /login/ HTTP/1.1" 302 0
 [INFO] 2024-12-04 14:59:23,337 basehttp "GET / HTTP/1.1" 200 3591
+[INFO] 2024-12-04 15:53:06,568 autoreload Watching for file changes with StatReloader
+[WARNING] 2024-12-04 15:53:10,389 base Session data corrupted
+[INFO] 2024-12-04 15:53:10,402 basehttp "GET / HTTP/1.1" 200 3415
+[WARNING] 2024-12-04 15:53:11,070 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 15:53:11,071 basehttp "GET /favicon.ico HTTP/1.1" 404 4329
+[WARNING] 2024-12-04 15:53:14,168 base Session data corrupted
+[INFO] 2024-12-04 15:53:14,171 basehttp "GET / HTTP/1.1" 200 3415
+[WARNING] 2024-12-04 15:53:15,964 base Session data corrupted
+[INFO] 2024-12-04 15:53:15,967 basehttp "GET /login/ HTTP/1.1" 200 1718
+[WARNING] 2024-12-04 15:53:18,063 base Session data corrupted
+[INFO] 2024-12-04 15:53:18,431 basehttp "POST /login/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 15:53:18,621 basehttp "GET / HTTP/1.1" 200 3591
+[INFO] 2024-12-04 15:53:26,447 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 15:54:09,809 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\settings.py changed, reloading.
+[INFO] 2024-12-04 15:54:10,826 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 15:56:18,255 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\settings.py changed, reloading.
+[INFO] 2024-12-04 15:58:57,586 autoreload Watching for file changes with StatReloader
+[WARNING] 2024-12-04 15:59:03,954 base Session data corrupted
+[INFO] 2024-12-04 15:59:03,968 basehttp "GET / HTTP/1.1" 200 3415
+[WARNING] 2024-12-04 15:59:05,866 base Session data corrupted
+[INFO] 2024-12-04 15:59:05,868 basehttp "GET /login/ HTTP/1.1" 200 1718
+[WARNING] 2024-12-04 15:59:07,627 base Session data corrupted
+[INFO] 2024-12-04 15:59:07,956 basehttp "POST /login/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 15:59:08,150 basehttp "GET / HTTP/1.1" 200 3591
+[INFO] 2024-12-04 15:59:10,511 basehttp "GET /login/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 15:59:12,265 basehttp "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 15:59:12,459 basehttp "GET / HTTP/1.1" 200 3584
+[INFO] 2024-12-04 15:59:13,865 basehttp "GET / HTTP/1.1" 200 3415
+[INFO] 2024-12-04 16:01:17,593 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:01:39,902 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:09:25,675 autoreload Watching for file changes with StatReloader
+[ERROR] 2024-12-04 16:09:28,028 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 32, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+[ERROR] 2024-12-04 16:09:28,038 basehttp "GET / HTTP/1.1" 500 172549
+[INFO] 2024-12-04 16:09:37,780 basehttp "GET / HTTP/1.1" 200 3534
+[ERROR] 2024-12-04 16:10:02,711 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 32, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+[ERROR] 2024-12-04 16:10:02,723 basehttp "GET / HTTP/1.1" 500 172690
+[ERROR] 2024-12-04 16:10:48,440 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 32, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+[ERROR] 2024-12-04 16:10:48,454 basehttp "GET / HTTP/1.1" 500 172690
+[ERROR] 2024-12-04 16:11:36,905 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'trans'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 32, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'trans'. Did you forget to register or load this tag?
+[ERROR] 2024-12-04 16:11:36,911 basehttp "GET / HTTP/1.1" 500 174434
+[INFO] 2024-12-04 16:13:26,160 autoreload Watching for file changes with StatReloader
+[ERROR] 2024-12-04 16:13:29,001 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 32, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+[ERROR] 2024-12-04 16:13:29,010 basehttp "GET / HTTP/1.1" 500 140879
+[ERROR] 2024-12-04 16:13:30,332 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 32, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+[ERROR] 2024-12-04 16:13:30,340 basehttp "GET / HTTP/1.1" 500 140879
+[INFO] 2024-12-04 16:14:53,819 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\urls.py changed, reloading.
+[INFO] 2024-12-04 16:14:54,706 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:14:57,533 basehttp "GET / HTTP/1.1" 200 3697
+[INFO] 2024-12-04 16:15:00,067 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:15:00,239 basehttp "GET / HTTP/1.1" 200 3697
+[INFO] 2024-12-04 16:15:01,848 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:15:02,035 basehttp "GET / HTTP/1.1" 200 3697
+[INFO] 2024-12-04 16:15:03,762 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:15:03,948 basehttp "GET / HTTP/1.1" 200 3697
+[WARNING] 2024-12-04 16:15:05,609 log Not Found: /contact/
+[WARNING] 2024-12-04 16:15:05,610 basehttp "GET /contact/ HTTP/1.1" 404 4825
+[INFO] 2024-12-04 16:15:09,027 basehttp "GET /post/yhiojkpl/ HTTP/1.1" 200 1781
+[INFO] 2024-12-04 16:15:12,504 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:15:12,666 basehttp "GET /post/yhiojkpl/ HTTP/1.1" 200 1781
+[INFO] 2024-12-04 16:16:05,339 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:16:08,316 basehttp "GET / HTTP/1.1" 200 3697
+[INFO] 2024-12-04 16:16:12,469 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:16:12,658 basehttp "GET / HTTP/1.1" 200 3697
+[INFO] 2024-12-04 16:16:15,998 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:16:16,189 basehttp "GET / HTTP/1.1" 200 3697
+[INFO] 2024-12-04 16:16:20,328 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:16:20,511 basehttp "GET / HTTP/1.1" 200 3697
+[INFO] 2024-12-04 16:16:29,941 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:16:30,111 basehttp "GET / HTTP/1.1" 200 3697
+[INFO] 2024-12-04 16:16:39,810 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:16:40,015 basehttp "GET / HTTP/1.1" 200 3697
+[INFO] 2024-12-04 16:16:54,648 basehttp "GET / HTTP/1.1" 200 3697
+[INFO] 2024-12-04 16:17:00,466 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:17:00,665 basehttp "GET / HTTP/1.1" 200 3697
+[INFO] 2024-12-04 16:17:15,308 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:17:16,826 basehttp "GET / HTTP/1.1" 200 3697
+[INFO] 2024-12-04 16:17:19,794 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:17:19,918 basehttp "GET / HTTP/1.1" 200 3697
+[INFO] 2024-12-04 16:17:33,493 basehttp "GET / HTTP/1.1" 200 3697
+[WARNING] 2024-12-04 16:17:38,327 log Not Found: /fr
+[WARNING] 2024-12-04 16:17:38,328 basehttp "GET /fr HTTP/1.1" 404 4807
+[INFO] 2024-12-04 16:17:42,432 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:17:42,573 basehttp "GET / HTTP/1.1" 200 3697
+[INFO] 2024-12-04 16:18:02,901 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:18:05,834 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:18:09,877 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:18:10,073 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:18:14,240 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:18:14,450 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:18:19,480 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:18:19,558 basehttp "GET /static/css/styles.css HTTP/1.1" 200 4720
+[WARNING] 2024-12-04 16:18:19,625 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 16:18:19,626 basehttp "GET /favicon.ico HTTP/1.1" 404 4834
+[INFO] 2024-12-04 16:18:29,209 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:18:29,413 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:18:45,688 basehttp "GET /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:18:45,885 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:19:59,604 basehttp "GET / HTTP/1.1" 200 3688
+[WARNING] 2024-12-04 16:20:00,208 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 16:20:00,208 basehttp "GET /favicon.ico HTTP/1.1" 404 4834
+[INFO] 2024-12-04 16:21:00,533 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\settings.py changed, reloading.
+[INFO] 2024-12-04 16:21:01,018 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:21:03,925 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:21:06,407 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:21:06,635 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:21:47,511 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:21:51,522 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:21:53,990 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:21:54,204 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:21:56,819 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:21:56,992 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:26:55,148 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:26:59,004 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:27:04,461 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:27:04,599 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:27:24,044 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:27:24,233 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:27:28,304 basehttp "GET / HTTP/1.1" 200 3688
+[INFO] 2024-12-04 16:27:52,484 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:27:52,685 basehttp "GET / HTTP/1.1" 200 3688
+[WARNING] 2024-12-04 16:27:54,403 log Not Found: /about/
+[WARNING] 2024-12-04 16:27:54,404 basehttp "GET /about/ HTTP/1.1" 404 4819
+[WARNING] 2024-12-04 16:27:58,350 log Not Found: /contact/
+[WARNING] 2024-12-04 16:27:58,350 basehttp "GET /contact/ HTTP/1.1" 404 4825
+[INFO] 2024-12-04 16:29:23,272 basehttp "GET / HTTP/1.1" 200 3804
+[INFO] 2024-12-04 16:29:24,949 basehttp "GET /post/new/ HTTP/1.1" 302 0
+[WARNING] 2024-12-04 16:29:24,961 log Not Found: /accounts/login/
+[WARNING] 2024-12-04 16:29:24,962 basehttp "GET /accounts/login/?next=/post/new/ HTTP/1.1" 404 4862
+[INFO] 2024-12-04 16:29:28,444 basehttp "GET /login/ HTTP/1.1" 200 2107
+[INFO] 2024-12-04 16:29:30,353 basehttp "POST /login/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:29:30,548 basehttp "GET / HTTP/1.1" 200 3804
+[INFO] 2024-12-04 16:29:33,592 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:29:33,761 basehttp "GET / HTTP/1.1" 200 3804
+[INFO] 2024-12-04 16:33:16,687 basehttp "GET / HTTP/1.1" 200 4096
+[INFO] 2024-12-04 16:33:19,236 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:33:19,451 basehttp "GET / HTTP/1.1" 200 4096
+[INFO] 2024-12-04 16:33:45,145 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:33:49,136 basehttp "GET / HTTP/1.1" 200 4096
+[INFO] 2024-12-04 16:33:51,929 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:33:52,115 basehttp "GET / HTTP/1.1" 200 4096
+[INFO] 2024-12-04 16:35:05,502 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:35:48,473 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:35:50,561 basehttp "GET / HTTP/1.1" 200 4096
+[INFO] 2024-12-04 16:36:00,330 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:36:04,127 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:36:04,329 basehttp "GET / HTTP/1.1" 200 4096
+[INFO] 2024-12-04 16:36:07,763 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:36:08,038 basehttp "GET / HTTP/1.1" 200 4096
+[INFO] 2024-12-04 16:38:24,806 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:38:27,001 basehttp "GET / HTTP/1.1" 200 4475
+[INFO] 2024-12-04 16:38:29,679 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:38:29,859 basehttp "GET / HTTP/1.1" 200 4475
+[INFO] 2024-12-04 16:38:32,090 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:38:32,287 basehttp "GET / HTTP/1.1" 200 4475
+[INFO] 2024-12-04 16:38:46,249 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:38:48,612 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:38:48,797 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:39:49,534 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\settings.py changed, reloading.
+[INFO] 2024-12-04 16:39:49,929 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:39:52,518 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:39:54,571 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:39:54,765 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:40:14,904 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\urls.py changed, reloading.
+[INFO] 2024-12-04 16:40:15,344 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:40:39,144 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\urls.py changed, reloading.
+[INFO] 2024-12-04 16:40:39,547 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:40:40,172 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:40:44,096 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:40:44,436 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:40:46,424 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:40:46,618 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:40:48,213 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:40:48,377 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:41:20,949 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\settings.py changed, reloading.
+[INFO] 2024-12-04 16:41:21,399 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:41:26,786 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\settings.py changed, reloading.
+[INFO] 2024-12-04 16:41:27,197 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:41:30,876 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:41:32,801 basehttp "POST /set_language/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:41:32,970 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:46:35,720 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:46:37,893 basehttp "GET / HTTP/1.1" 200 4507
+[WARNING] 2024-12-04 16:46:38,109 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 16:46:38,110 basehttp "GET /favicon.ico HTTP/1.1" 404 5496
+[INFO] 2024-12-04 16:46:40,633 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:46:40,804 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:47:03,829 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\wsgi.py changed, reloading.
+[INFO] 2024-12-04 16:47:04,284 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:47:13,341 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:47:15,295 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:47:15,477 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:47:18,583 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:47:18,899 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:47:31,681 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:47:39,406 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:47:41,823 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 16:47:42,015 basehttp "GET / HTTP/1.1" 200 4507
+[INFO] 2024-12-04 16:55:07,543 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:55:16,708 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:55:56,881 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\urls.py changed, reloading.
+[INFO] 2024-12-04 16:55:57,307 autoreload Watching for file changes with StatReloader
+[ERROR] 2024-12-04 16:56:02,776 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 33, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+[ERROR] 2024-12-04 16:56:02,789 basehttp "GET / HTTP/1.1" 500 142000
+[INFO] 2024-12-04 16:56:23,532 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\urls.py changed, reloading.
+[INFO] 2024-12-04 16:56:23,975 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:57:04,950 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py changed, reloading.
+[INFO] 2024-12-04 16:57:05,362 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:57:13,248 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:57:17,947 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:57:47,766 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\urls.py changed, reloading.
+[INFO] 2024-12-04 16:57:48,135 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:57:51,322 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\urls.py changed, reloading.
+[INFO] 2024-12-04 16:57:51,760 autoreload Watching for file changes with StatReloader
+[ERROR] 2024-12-04 16:57:58,607 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 35, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+[ERROR] 2024-12-04 16:57:58,615 basehttp "GET / HTTP/1.1" 500 142000
+[INFO] 2024-12-04 16:58:19,681 autoreload Watching for file changes with StatReloader
+[ERROR] 2024-12-04 16:58:23,888 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 35, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+[ERROR] 2024-12-04 16:58:23,894 basehttp "GET / HTTP/1.1" 500 142000
+[INFO] 2024-12-04 16:58:59,157 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\urls.py changed, reloading.
+[INFO] 2024-12-04 16:58:59,582 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:59:04,972 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\urls.py changed, reloading.
+[INFO] 2024-12-04 16:59:05,420 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 16:59:07,782 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\urls.py changed, reloading.
+[INFO] 2024-12-04 16:59:08,209 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 17:00:59,088 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\urls.py changed, reloading.
+[INFO] 2024-12-04 17:00:59,558 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 17:01:15,049 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py changed, reloading.
+[INFO] 2024-12-04 17:01:15,446 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 17:01:31,499 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 17:01:39,872 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 17:02:52,886 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\urls.py changed, reloading.
+[INFO] 2024-12-04 17:02:53,308 autoreload Watching for file changes with StatReloader
+[ERROR] 2024-12-04 17:02:54,207 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 34, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+[ERROR] 2024-12-04 17:02:54,218 basehttp "GET / HTTP/1.1" 500 142000
+[INFO] 2024-12-04 17:03:06,730 autoreload Watching for file changes with StatReloader
+[ERROR] 2024-12-04 17:03:09,151 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 34, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+[ERROR] 2024-12-04 17:03:09,163 basehttp "GET / HTTP/1.1" 500 142000
+[INFO] 2024-12-04 17:05:21,837 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\settings.py changed, reloading.
+[INFO] 2024-12-04 17:05:22,231 autoreload Watching for file changes with StatReloader
+[ERROR] 2024-12-04 17:05:23,591 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 34, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+[ERROR] 2024-12-04 17:05:23,597 basehttp "GET / HTTP/1.1" 500 141890
+[INFO] 2024-12-04 17:05:35,121 autoreload Watching for file changes with StatReloader
+[ERROR] 2024-12-04 17:05:38,481 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 34, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+[ERROR] 2024-12-04 17:05:38,485 basehttp "GET / HTTP/1.1" 500 141739
+[INFO] 2024-12-04 17:07:25,446 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\urls.py changed, reloading.
+[INFO] 2024-12-04 17:07:25,910 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 17:07:50,107 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 17:07:59,434 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\urls.py changed, reloading.
+[INFO] 2024-12-04 17:07:59,863 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 17:08:00,559 basehttp "GET / HTTP/1.1" 200 4503
+[INFO] 2024-12-04 17:08:03,238 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:08:03,439 basehttp "GET /fr/ HTTP/1.1" 200 4543
+[INFO] 2024-12-04 17:08:05,807 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:08:06,024 basehttp "GET /fr/ HTTP/1.1" 200 4543
+[INFO] 2024-12-04 17:08:15,524 basehttp "GET /fr/post/new/ HTTP/1.1" 200 3042
+[INFO] 2024-12-04 17:08:16,806 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:08:16,980 basehttp "GET /fr/post/new/ HTTP/1.1" 200 3042
+[INFO] 2024-12-04 17:08:19,429 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:08:19,606 basehttp "GET /fr/post/new/ HTTP/1.1" 200 3042
+[INFO] 2024-12-04 17:08:21,284 basehttp "GET /fr/logout/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:08:21,465 basehttp "GET /fr/ HTTP/1.1" 200 4525
+[INFO] 2024-12-04 17:08:23,003 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:08:23,190 basehttp "GET /fr/ HTTP/1.1" 200 4360
+[INFO] 2024-12-04 17:08:25,429 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:08:25,594 basehttp "GET /fr/ HTTP/1.1" 200 4360
+[INFO] 2024-12-04 17:08:31,798 basehttp "GET /fr/post/yhiojkpl/ HTTP/1.1" 200 2420
+[INFO] 2024-12-04 17:08:33,499 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:08:33,718 basehttp "GET /fr/post/yhiojkpl/ HTTP/1.1" 200 2420
+[INFO] 2024-12-04 17:08:35,188 basehttp "GET /fr/ HTTP/1.1" 200 4360
+[INFO] 2024-12-04 17:09:54,116 basehttp "GET /fr/ HTTP/1.1" 200 3934
+[INFO] 2024-12-04 17:09:56,130 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:09:56,342 basehttp "GET /fr/ HTTP/1.1" 200 3934
+[INFO] 2024-12-04 17:10:05,598 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:10:05,753 basehttp "GET /fr/ HTTP/1.1" 200 3934
+[INFO] 2024-12-04 17:10:57,025 basehttp "GET /fr/ HTTP/1.1" 200 3934
+[INFO] 2024-12-04 17:10:58,878 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:10:59,039 basehttp "GET /fr/ HTTP/1.1" 200 3934
+[INFO] 2024-12-04 17:11:01,533 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:11:01,721 basehttp "GET /fr/ HTTP/1.1" 200 3934
+[INFO] 2024-12-04 17:13:34,787 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 17:13:38,354 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:13:38,667 basehttp "GET /fr/ HTTP/1.1" 200 3934
+[INFO] 2024-12-04 17:13:40,391 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:13:40,582 basehttp "GET /fr/ HTTP/1.1" 200 3934
+[INFO] 2024-12-04 17:13:42,244 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:13:42,403 basehttp "GET /fr/ HTTP/1.1" 200 3934
+[INFO] 2024-12-04 17:13:44,334 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:13:44,525 basehttp "GET /fr/ HTTP/1.1" 200 3934
+[INFO] 2024-12-04 17:16:11,428 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\urls.py changed, reloading.
+[INFO] 2024-12-04 17:16:11,971 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 17:16:16,430 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\urls.py changed, reloading.
+[INFO] 2024-12-04 17:16:17,016 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 17:17:07,523 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 17:17:09,309 basehttp "GET / HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:17:09,540 basehttp "GET /fr/ HTTP/1.1" 200 4106
+[INFO] 2024-12-04 17:17:12,979 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:17:13,179 basehttp "GET /en/ HTTP/1.1" 200 4102
+[INFO] 2024-12-04 17:17:15,097 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:17:15,281 basehttp "GET /fr/ HTTP/1.1" 200 4106
+[INFO] 2024-12-04 17:17:16,624 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:17:16,803 basehttp "GET /en/ HTTP/1.1" 200 4102
+[INFO] 2024-12-04 17:17:35,492 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 17:17:37,237 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:17:37,425 basehttp "GET /fr/ HTTP/1.1" 200 4106
+[INFO] 2024-12-04 17:17:38,574 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:17:38,711 basehttp "GET /en/ HTTP/1.1" 200 4086
+[INFO] 2024-12-04 17:17:41,710 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 17:17:41,848 basehttp "GET /fr/ HTTP/1.1" 200 4106

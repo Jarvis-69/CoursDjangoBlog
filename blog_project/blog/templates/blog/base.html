@@ -1,49 +1,61 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
-<html>
+<html lang="{{ LANGUAGE_CODE }}">
 <head>
-    <title>{% block title %}Blog Django{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>{% block title %}{% trans "Blog Django" %}{% endblock %}</title>
+   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="/" class="nav-brand">Blog Django</a>
-            <div class="nav-links">
-                <a href="{% url 'post_list' %}">Accueil</a>
-                {% if user.is_authenticated %}
-                    <a href="{% url 'post_new' %}">Nouvel Article</a>
-                    <a href="{% url 'logout' %}" class="nav-logout">Déconnexion</a>
-                    {% if user.is_staff %}
-                    <a href="{% url 'admin:index' %}" class="admin-link">Admin</a>
-                    {% endif %}
-                    <span class="nav-username">{{ user.username }}</span>
-                {% else %}
-                    <a href="{% url 'login' %}">Connexion</a>
-                    <a href="{% url 'register' %}" class="register-link">Inscription</a>
-                {% endif %}
-            </div>
-        </div>
-    </nav>
+   <nav class="navbar">
+       <div class="nav-container">
+           <a href="/" class="nav-brand">{% trans "Blog Django" %}</a>
+           <div class="nav-links">
+               <a href="{% url 'post_list' %}">{% trans "Accueil" %}</a>
+               {% if user.is_authenticated %}
+                   <a href="{% url 'post_new' %}">{% trans "Nouvel Article" %}</a>
+                   <a href="{% url 'logout' %}" class="nav-logout">{% trans "Déconnexion" %}</a>
+                   {% if user.is_staff %}
+                       <a href="{% url 'admin:index' %}" class="admin-link">{% trans "Admin" %}</a>
+                   {% endif %}
+                   <span class="nav-username">{{ user.username }}</span>
+               {% else %}
+                   <a href="{% url 'login' %}">{% trans "Connexion" %}</a>
+                   <a href="{% url 'register' %}" class="register-link">{% trans "Inscription" %}</a>
+               {% endif %}
+           </div>
+           <form action="{% url 'set_language' %}" method="post" class="language-selector">
+            {% csrf_token %}
+            <input name="next" type="hidden" value="{{ redirect_to }}">
+            <select name="language" onchange="this.form.submit()">
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+                {% for lang_code, lang_name in LANGUAGES %}
+                    <option value="{{ lang_code }}" {% if lang_code == LANGUAGE_CODE %}selected{% endif %}>
+                        {{ lang_name }}
+                    </option>
+                {% endfor %}
+            </select>
+        </form>
+       </div>
+   </nav>
 
-    {% if messages %}
-    <div class="messages">
-        {% for message in messages %}
-        <div class="message {{ message.tags }}">
-            {{ message }}
-        </div>
-        {% endfor %}
-    </div>
-    {% endif %}
+   {% if messages %}
+   <div class="messages">
+       {% for message in messages %}
+       <div class="message {{ message.tags }}">
+           {{ message }}
+       </div>
+       {% endfor %}
+   </div>
+   {% endif %}
 
-    {% block hero %}{% endblock %}
+   {% block hero %}{% endblock %}
 
-    <div class="content">
-        {% block content %}{% endblock %}
-    </div>
-
-     
+   <div class="content">
+       {% block content %}{% endblock %}
+   </div>
 </body>
 </html>
