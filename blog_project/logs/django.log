@@ -1589,3 +1589,813 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'se
 [INFO] 2024-12-04 22:03:29,157 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
 [INFO] 2024-12-04 22:03:29,569 basehttp "GET /fr/ HTTP/1.1" 200 4106
 [INFO] 2024-12-04 22:10:09,420 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:10:16,592 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:10:16,787 basehttp "GET /en/ HTTP/1.1" 200 4089
+[INFO] 2024-12-04 22:10:20,316 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:10:20,500 basehttp "GET /fr/ HTTP/1.1" 200 4106
+[INFO] 2024-12-04 22:10:22,288 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:10:22,471 basehttp "GET /en/ HTTP/1.1" 200 4089
+[INFO] 2024-12-04 22:10:54,255 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:10:54,417 basehttp "GET /fr/ HTTP/1.1" 200 4106
+[INFO] 2024-12-04 22:10:55,865 basehttp "GET /fr/login/ HTTP/1.1" 200 2388
+[INFO] 2024-12-04 22:10:58,912 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:10:58,919 basehttp "GET /en/login/ HTTP/1.1" 200 2375
+[INFO] 2024-12-04 22:11:02,194 basehttp "POST /en/login/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:11:02,198 basehttp "GET / HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:11:02,391 basehttp "GET /en/ HTTP/1.1" 200 4263
+[INFO] 2024-12-04 22:11:06,387 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:11:06,704 basehttp "GET /fr/ HTTP/1.1" 200 4294
+[INFO] 2024-12-04 22:11:08,314 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:11:08,483 basehttp "GET /en/ HTTP/1.1" 200 4263
+[INFO] 2024-12-04 22:11:20,459 basehttp "GET /en/post/yhiojkpl/ HTTP/1.1" 200 2542
+[INFO] 2024-12-04 22:11:25,365 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:11:25,537 basehttp "GET /fr/post/yhiojkpl/ HTTP/1.1" 200 2570
+[INFO] 2024-12-04 22:11:27,854 basehttp "GET /fr/post/yhiojkpl/delete/ HTTP/1.1" 200 2171
+[INFO] 2024-12-04 22:11:31,578 basehttp "POST /i18n/setlang/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:11:31,773 basehttp "GET /en/post/yhiojkpl/delete/ HTTP/1.1" 200 2144
+[INFO] 2024-12-04 22:11:34,585 basehttp "POST /en/post/yhiojkpl/delete/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:11:34,778 basehttp "GET /en/ HTTP/1.1" 200 3781
+[INFO] 2024-12-04 22:12:14,879 basehttp "GET /en/ HTTP/1.1" 200 3636
+[INFO] 2024-12-04 22:12:17,166 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:12:17,203 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:12:17,204 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:12:17,204 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:12:17,206 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:12:17,216 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:12:17,217 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:12:17,222 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:12:17,227 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:12:17,230 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:12:18,865 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:18:55,954 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\models.py changed, reloading.
+[INFO] 2024-12-04 22:18:56,612 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:19:09,734 basehttp "GET / HTTP/1.1" 302 0
+[ERROR] 2024-12-04 22:19:10,119 log Internal Server Error: /en/
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: ERREUR:  la colonne blog_post.updated_at n'existe pas
+LINE 1: ... "blog_post"."content", "blog_post"."created_at", "blog_post...
+                                                             ^
+HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_at ».
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 34, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la colonne blog_post.updated_at n'existe pas
+LINE 1: ... "blog_post"."content", "blog_post"."created_at", "blog_post...
+                                                             ^
+HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_at ».
+
+[ERROR] 2024-12-04 22:19:10,129 basehttp "GET /en/ HTTP/1.1" 500 210415
+[INFO] 2024-12-04 22:19:16,432 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:19:18,209 basehttp "GET / HTTP/1.1" 302 0
+[ERROR] 2024-12-04 22:19:18,838 log Internal Server Error: /en/
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: ERREUR:  la colonne blog_post.updated_at n'existe pas
+LINE 1: ... "blog_post"."content", "blog_post"."created_at", "blog_post...
+                                                             ^
+HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_at ».
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 34, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la colonne blog_post.updated_at n'existe pas
+LINE 1: ... "blog_post"."content", "blog_post"."created_at", "blog_post...
+                                                             ^
+HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_at ».
+
+[ERROR] 2024-12-04 22:19:18,860 basehttp "GET /en/ HTTP/1.1" 500 210415
+[INFO] 2024-12-04 22:20:05,266 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\models.py changed, reloading.
+[INFO] 2024-12-04 22:20:06,327 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:20:25,187 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:20:26,561 basehttp "GET / HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:20:27,082 basehttp "GET /en/ HTTP/1.1" 200 3636
+[INFO] 2024-12-04 22:20:32,386 basehttp "GET /en/admin HTTP/1.1" 301 0
+[INFO] 2024-12-04 22:20:32,609 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:20:34,141 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:20:36,378 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:20:36,606 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 22:20:36,623 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 22:20:36,623 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 22:20:36,626 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 22:20:36,628 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 22:20:36,630 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 22:20:36,634 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 22:20:36,642 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 22:20:36,642 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[WARNING] 2024-12-04 22:20:36,782 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 22:20:36,783 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 22:20:36,853 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:20:36,937 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 22:20:36,947 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 22:20:36,948 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 22:20:36,949 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 22:20:36,950 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 22:20:36,950 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 22:20:36,960 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 22:20:36,969 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2024-12-04 22:20:36,970 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 22:21:01,004 basehttp "GET /en/admin/auth/user/ HTTP/1.1" 200 11568
+[INFO] 2024-12-04 22:21:01,036 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,037 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,038 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,038 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,041 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,047 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,050 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,050 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,052 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,063 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,065 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,071 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,078 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,255 basehttp "GET /en/admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2024-12-04 22:21:01,283 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,283 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:01,284 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+[INFO] 2024-12-04 22:21:02,718 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:21:49,381 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\models.py changed, reloading.
+[INFO] 2024-12-04 22:21:50,143 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:22:01,060 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:24:13,515 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\models.py changed, reloading.
+[INFO] 2024-12-04 22:24:14,280 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:24:19,293 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:24:21,287 basehttp "GET / HTTP/1.1" 302 0
+[ERROR] 2024-12-04 22:24:21,636 log Internal Server Error: /en/
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: ERREUR:  la colonne blog_post.updated_at n'existe pas
+LINE 1: ... "blog_post"."content", "blog_post"."created_at", "blog_post...
+                                                             ^
+HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_at ».
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 34, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la colonne blog_post.updated_at n'existe pas
+LINE 1: ... "blog_post"."content", "blog_post"."created_at", "blog_post...
+                                                             ^
+HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_at ».
+
+[ERROR] 2024-12-04 22:24:21,783 basehttp "GET /en/ HTTP/1.1" 500 210415
+[INFO] 2024-12-04 22:24:30,716 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:24:32,338 basehttp "GET / HTTP/1.1" 302 0
+[ERROR] 2024-12-04 22:24:32,748 log Internal Server Error: /en/
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: ERREUR:  la colonne blog_post.updated_at n'existe pas
+LINE 1: ... "blog_post"."content", "blog_post"."created_at", "blog_post...
+                                                             ^
+HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_at ».
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\views.py", line 34, in post_list
+    return render(request, 'blog/post_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la colonne blog_post.updated_at n'existe pas
+LINE 1: ... "blog_post"."content", "blog_post"."created_at", "blog_post...
+                                                             ^
+HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_at ».
+
+[ERROR] 2024-12-04 22:24:32,763 basehttp "GET /en/ HTTP/1.1" 500 210415
+[INFO] 2024-12-04 22:25:01,637 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:25:03,069 basehttp "GET / HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:25:03,378 basehttp "GET /en/ HTTP/1.1" 200 3636
+[INFO] 2024-12-04 22:25:08,131 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:25:10,882 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:25:13,014 basehttp "GET /en/admin/auth/user/ HTTP/1.1" 200 11568
+[INFO] 2024-12-04 22:25:13,225 basehttp "GET /en/admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2024-12-04 22:25:15,712 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:25:16,990 basehttp "GET /en/admin/auth/group/ HTTP/1.1" 200 7527
+[INFO] 2024-12-04 22:25:17,245 basehttp "GET /en/admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2024-12-04 22:25:19,028 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:25:33,122 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:25:33,323 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 22:25:33,324 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 22:25:33,355 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 22:25:33,359 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 22:25:33,361 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 22:25:33,362 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 22:25:33,367 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 22:25:33,377 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2024-12-04 22:25:33,377 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2024-12-04 22:25:33,531 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 22:25:33,531 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 22:26:33,397 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:26:39,913 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:26:40,676 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:26:42,495 basehttp "GET / HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:26:42,688 basehttp "GET /en/ HTTP/1.1" 200 3636
+[INFO] 2024-12-04 22:26:44,599 basehttp "GET /en/post/new/ HTTP/1.1" 200 2760
+[INFO] 2024-12-04 22:26:49,190 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:26:53,027 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:26:53,181 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 22:26:53,254 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 22:26:53,259 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 22:26:53,259 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 22:26:53,268 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 22:26:53,270 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 22:26:53,284 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 22:26:53,293 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2024-12-04 22:26:53,293 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2024-12-04 22:26:53,438 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 22:26:53,439 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 22:30:15,151 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:30:18,623 basehttp "GET / HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:30:18,960 basehttp "GET /en/ HTTP/1.1" 200 3636
+[INFO] 2024-12-04 22:30:25,227 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:30:26,817 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:30:26,995 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 22:30:27,042 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 22:30:27,063 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 22:30:27,067 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 22:30:27,071 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 22:30:27,072 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 22:30:27,076 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 22:30:27,087 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 22:30:27,087 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[WARNING] 2024-12-04 22:30:27,257 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 22:30:27,257 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 22:30:27,372 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:30:27,443 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 22:30:27,448 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 22:30:27,449 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 22:30:27,449 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 22:30:27,450 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 22:30:27,451 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 22:30:27,455 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 22:30:27,463 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 22:30:27,463 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2024-12-04 22:30:29,966 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:31:04,602 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:31:06,776 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:34:17,458 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:34:20,500 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:39:48,081 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:39:50,995 basehttp "GET / HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:39:51,332 basehttp "GET /en/ HTTP/1.1" 200 3636
+[INFO] 2024-12-04 22:39:53,928 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:40:13,418 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:40:15,717 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:40:16,787 basehttp - Broken pipe from ('127.0.0.1', 49919)
+[INFO] 2024-12-04 22:40:16,988 basehttp - Broken pipe from ('127.0.0.1', 49922)
+[INFO] 2024-12-04 22:40:17,135 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:40:17,509 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:40:17,734 basehttp - Broken pipe from ('127.0.0.1', 49927)
+[INFO] 2024-12-04 22:40:17,915 basehttp - Broken pipe from ('127.0.0.1', 49929)
+[INFO] 2024-12-04 22:40:18,080 basehttp - Broken pipe from ('127.0.0.1', 49931)
+[INFO] 2024-12-04 22:40:18,217 basehttp - Broken pipe from ('127.0.0.1', 49933)
+[INFO] 2024-12-04 22:40:18,427 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:40:18,656 basehttp - Broken pipe from ('127.0.0.1', 49935)
+[INFO] 2024-12-04 22:40:18,814 basehttp - Broken pipe from ('127.0.0.1', 49938)
+[INFO] 2024-12-04 22:40:18,969 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:40:19,558 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:40:36,471 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:40:36,763 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 22:40:36,769 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 22:40:36,773 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 22:40:36,773 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 22:40:36,779 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 22:40:36,780 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 22:40:36,787 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 22:40:36,795 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 22:40:36,796 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[WARNING] 2024-12-04 22:40:37,003 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 22:40:37,007 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 22:43:12,408 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:43:14,799 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[WARNING] 2024-12-04 22:43:15,954 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 22:43:15,959 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 22:43:16,678 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:43:16,958 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 22:43:16,977 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 22:43:16,979 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 22:43:16,981 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 22:43:16,982 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 22:43:16,983 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 22:43:16,988 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 22:43:16,998 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 22:43:16,998 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[WARNING] 2024-12-04 22:43:17,228 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 22:43:17,229 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 22:43:38,689 basehttp "GET /en/admin/auth/user/ HTTP/1.1" 200 11568
+[INFO] 2024-12-04 22:43:38,988 basehttp "GET /en/admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2024-12-04 22:43:41,253 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:45:01,175 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:45:03,548 basehttp "GET / HTTP/1.1" 302 0
+[INFO] 2024-12-04 22:45:03,868 basehttp "GET /en/ HTTP/1.1" 200 4284
+[INFO] 2024-12-04 22:45:07,804 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:45:10,465 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:45:10,755 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 22:45:10,773 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 22:45:10,777 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 22:45:10,786 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 22:45:10,788 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 22:45:10,790 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 22:45:10,794 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 22:45:10,802 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 22:45:10,802 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[WARNING] 2024-12-04 22:45:11,013 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 22:45:11,014 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 22:45:33,425 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:45:36,626 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:45:36,925 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 22:45:36,933 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 22:45:36,937 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 22:45:36,939 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 22:45:36,941 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 22:45:36,943 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 22:45:36,948 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 22:45:36,957 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2024-12-04 22:45:36,957 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2024-12-04 22:45:37,165 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 22:45:37,166 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 22:45:39,053 basehttp "GET /en/admin/auth/user/ HTTP/1.1" 200 11568
+[INFO] 2024-12-04 22:45:39,304 basehttp "GET /en/admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2024-12-04 22:45:40,720 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:46:11,377 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\settings.py changed, reloading.
+[INFO] 2024-12-04 22:46:12,501 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:46:16,363 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:46:19,059 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:46:19,423 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:46:19,871 basehttp - Broken pipe from ('127.0.0.1', 50196)
+[INFO] 2024-12-04 22:46:20,156 basehttp - Broken pipe from ('127.0.0.1', 50200)
+[INFO] 2024-12-04 22:46:20,334 basehttp - Broken pipe from ('127.0.0.1', 50202)
+[INFO] 2024-12-04 22:46:20,544 basehttp - Broken pipe from ('127.0.0.1', 50204)
+[INFO] 2024-12-04 22:46:20,735 basehttp - Broken pipe from ('127.0.0.1', 50206)
+[INFO] 2024-12-04 22:46:20,971 basehttp - Broken pipe from ('127.0.0.1', 50208)
+[INFO] 2024-12-04 22:46:21,114 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:48:59,054 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:49:01,565 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:49:02,551 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:50:23,063 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:50:26,084 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:50:26,800 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[WARNING] 2024-12-04 22:50:27,322 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 22:50:27,325 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 22:50:28,052 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:50:29,076 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 22:50:29,140 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 22:50:29,156 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 22:50:29,173 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 22:50:29,189 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 22:50:29,194 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 22:50:29,220 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 22:50:29,252 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2024-12-04 22:50:29,253 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 22:51:50,869 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:51:55,251 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:51:55,429 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 22:51:55,446 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 22:51:55,459 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 22:51:55,467 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 22:51:55,471 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 22:51:55,472 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 22:51:55,479 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 22:51:55,487 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2024-12-04 22:51:55,487 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2024-12-04 22:51:55,636 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 22:51:55,637 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 22:52:34,346 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:52:36,971 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:52:53,646 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 22:52:53,804 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 22:52:53,815 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 22:52:53,828 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 22:52:53,836 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 22:52:53,836 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 22:52:53,837 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 22:52:53,842 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 22:52:53,847 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2024-12-04 22:52:53,847 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2024-12-04 22:52:53,949 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 22:52:53,950 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 22:57:01,076 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog_project\settings.py changed, reloading.
+[INFO] 2024-12-04 22:57:01,959 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:58:04,784 autoreload C:\Users\Mohammed\Desktop\Code Perso\Intervenant\ISITECH Python\BlogCoursMDL\blog_project\blog\models.py changed, reloading.
+[INFO] 2024-12-04 22:58:05,348 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:58:09,382 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 22:59:17,801 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 23:00:05,556 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 23:00:07,661 basehttp "GET / HTTP/1.1" 302 0
+[INFO] 2024-12-04 23:00:07,968 basehttp "GET /en/ HTTP/1.1" 200 4284
+[INFO] 2024-12-04 23:00:10,084 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 23:00:11,608 basehttp "GET /en/admin/ HTTP/1.1" 200 5887
+[INFO] 2024-12-04 23:00:11,847 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 23:00:11,854 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 23:00:11,854 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 23:00:11,859 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 23:00:11,861 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 23:00:11,862 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 23:00:11,867 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 23:00:11,874 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 23:00:11,875 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[WARNING] 2024-12-04 23:00:12,005 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 23:00:12,006 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 23:01:00,825 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 23:01:20,613 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 23:02:02,394 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 23:02:21,914 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 23:04:39,260 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 23:04:40,190 basehttp "GET / HTTP/1.1" 302 0
+[INFO] 2024-12-04 23:04:40,404 basehttp "GET /en/ HTTP/1.1" 200 4284
+[INFO] 2024-12-04 23:04:43,682 basehttp "GET /en/logout/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 23:04:43,857 basehttp "GET /en/ HTTP/1.1" 200 4267
+[INFO] 2024-12-04 23:04:46,161 basehttp "GET /en/login/ HTTP/1.1" 200 2375
+[INFO] 2024-12-04 23:04:57,919 basehttp "POST /en/login/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 23:04:57,926 basehttp "GET / HTTP/1.1" 302 0
+[INFO] 2024-12-04 23:04:58,084 basehttp "GET /en/ HTTP/1.1" 200 4283
+[INFO] 2024-12-04 23:05:02,987 basehttp "GET /en/admin/ HTTP/1.1" 200 5886
+[INFO] 2024-12-04 23:05:14,020 basehttp "GET /en/admin/ HTTP/1.1" 200 5886
+[INFO] 2024-12-04 23:05:14,174 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 23:05:14,193 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 23:05:14,225 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 23:05:14,227 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 23:05:14,230 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 23:05:14,231 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 23:05:14,237 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 23:05:14,246 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2024-12-04 23:05:14,247 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2024-12-04 23:05:14,345 basehttp "GET /en/admin/ HTTP/1.1" 200 5886
+[INFO] 2024-12-04 23:05:14,402 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 23:05:14,406 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 23:05:14,407 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 23:05:14,407 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 23:05:14,414 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 23:05:14,415 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[WARNING] 2024-12-04 23:05:14,435 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 23:05:14,436 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 23:05:14,447 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 23:05:14,459 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2024-12-04 23:05:14,461 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2024-12-04 23:05:14,577 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 23:05:14,578 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 23:05:14,832 basehttp - Broken pipe from ('127.0.0.1', 50867)
+[INFO] 2024-12-04 23:05:15,026 basehttp "GET /en/admin/ HTTP/1.1" 200 5886
+[INFO] 2024-12-04 23:05:15,074 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 23:05:15,084 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 23:05:15,085 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 23:05:15,086 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 23:05:15,088 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 23:05:15,089 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 23:05:15,110 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 23:05:15,118 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2024-12-04 23:05:15,118 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2024-12-04 23:05:15,225 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 23:05:15,226 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 23:05:30,273 basehttp "GET /en/admin/ HTTP/1.1" 200 5886
+[INFO] 2024-12-04 23:05:33,799 basehttp "GET /admin/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 23:05:33,975 basehttp "GET /en/admin/ HTTP/1.1" 200 5886
+[INFO] 2024-12-04 23:05:38,460 basehttp "GET /fr/admin/ HTTP/1.1" 200 6002
+[INFO] 2024-12-04 23:05:42,936 basehttp "GET /en/admin/ HTTP/1.1" 200 5886
+[INFO] 2024-12-04 23:05:46,176 basehttp "GET /fr/admin/ HTTP/1.1" 200 6002
+[INFO] 2024-12-04 23:05:48,134 basehttp "GET /fr/admin/ HTTP/1.1" 200 6002
+[INFO] 2024-12-04 23:05:48,156 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+[INFO] 2024-12-04 23:05:48,156 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+[INFO] 2024-12-04 23:05:48,162 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2024-12-04 23:05:48,164 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2024-12-04 23:05:48,164 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2024-12-04 23:05:48,166 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+[INFO] 2024-12-04 23:05:48,196 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2024-12-04 23:05:48,200 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2024-12-04 23:05:48,201 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2024-12-04 23:05:48,343 log Not Found: /favicon.ico
+[WARNING] 2024-12-04 23:05:48,344 basehttp "GET /favicon.ico HTTP/1.1" 404 2359
+[INFO] 2024-12-04 23:07:50,427 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 23:07:52,886 basehttp "GET / HTTP/1.1" 302 0
+[INFO] 2024-12-04 23:07:53,204 basehttp "GET /en/ HTTP/1.1" 200 4283
+[INFO] 2024-12-04 23:07:55,496 basehttp "GET /en/admin/ HTTP/1.1" 200 5886
+[INFO] 2024-12-04 23:08:01,774 basehttp "GET /admin/ HTTP/1.1" 302 0
+[INFO] 2024-12-04 23:08:01,952 basehttp "GET /en/admin/ HTTP/1.1" 200 5886

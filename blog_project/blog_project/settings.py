@@ -5,6 +5,7 @@ from django.utils.translation import gettext_lazy as _
 
 # Base directory of the project
 BASE_DIR = Path(__file__).resolve().parent.parent
+print(f"Base directory: {BASE_DIR}")
 
 # Initialize environment variables
 env = environ.Env()
@@ -15,17 +16,23 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env.bool('DEBUG', default=False)
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=[])
 
+print(f"DEBUG mode: {DEBUG}")
+print(f"Allowed hosts: {ALLOWED_HOSTS}")
 # Installed Applications
 INSTALLED_APPS = [
+    # Applications par défaut
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Votre application
     'blog',
 ]
 
+print(f"Installed apps: {INSTALLED_APPS}")
 # Middleware Configuration
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -73,6 +80,7 @@ DATABASES = {
     }
 }
 
+print(f"Database configuration: {DATABASES}")
 # Password Validators
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
