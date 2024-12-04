@@ -299,3 +299,5 @@ HINT:  Peut-être que vous souhaitiez référencer la colonne « blog_post.created_a
 [INFO] 2024-12-04 11:41:22,103 views Accès à la liste des articles
 [INFO] 2024-12-04 11:41:22,306 basehttp "GET / HTTP/1.1" 200 2650
 [INFO] 2024-12-04 11:45:03,294 autoreload Watching for file changes with StatReloader
+[INFO] 2024-12-04 11:56:01,458 views Accès à la liste des articles
+[INFO] 2024-12-04 11:56:01,736 basehttp "GET / HTTP/1.1" 200 2650
