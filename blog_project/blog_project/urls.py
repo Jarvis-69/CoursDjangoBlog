@@ -8,5 +8,5 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
-    path('', include('blog.urls')),
+    path('', include('blog.urls')),  # Inclure les URLs de l'application blog
 )

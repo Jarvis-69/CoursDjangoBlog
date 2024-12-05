@@ -1,9 +1,8 @@
-# French translations
 msgid ""
 msgstr ""
 "Project-Id-Version: Django Blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-04 17:16+0100\n"
+"POT-Creation-Date: 2024-12-05 11:35+0100\n"
 "PO-Revision-Date: 2024-12-04 17:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: French <fr@li.org>\n"
@@ -13,70 +12,125 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: .\blog\templates\blog\base.html:6 .\blog\templates\blog\base.html:14
+#: .\blog\templates\blog\base.html:7 .\blog\templates\blog\base.html:16
 msgid "Blog Django"
 msgstr "Blog Django"
 
-#: .\blog\templates\blog\base.html:16
+#: .\blog\templates\blog\base.html:18
+#: .\blog\templates\blog\filter_by_category.html:185
 msgid "Accueil"
 msgstr "Accueil"
 
-#: .\blog\templates\blog\base.html:18
+#: .\blog\templates\blog\base.html:19
+#: .\blog\templates\blog\filter_by_category.html:186
+msgid "Catégories"
+msgstr "Catégories"
+
+#: .\blog\templates\blog\base.html:21
 msgid "Nouvel Article"
 msgstr "Nouvel Article"
 
-#: .\blog\templates\blog\base.html:19
+#: .\blog\templates\blog\base.html:22
 msgid "Déconnexion"
 msgstr "Déconnexion"
 
-#: .\blog\templates\blog\base.html:21
+#: .\blog\templates\blog\base.html:24
 msgid "Admin"
 msgstr "Administration"
 
-#: .\blog\templates\blog\base.html:25
+#: .\blog\templates\blog\base.html:28
 msgid "Connexion"
 msgstr "Connexion"
 
-#: .\blog\templates\blog\base.html:26
+#: .\blog\templates\blog\base.html:29
 msgid "Inscription"
 msgstr "Inscription"
 
-#: .\blog\views.py:24
+#: .\blog\templates\blog\filter_by_category.html:205
+msgid "Filter by Category"
+msgstr "Filtrer par Catégorie"
+
+#: .\blog\templates\blog\filter_by_category.html:207
+#, fuzzy
+#| msgid "Catégories"
+msgid "Categories"
+msgstr "Catégories"
+
+#: .\blog\templates\blog\filter_by_category.html:209
+msgid "Toutes les catégories"
+msgstr "Toutes les catégories"
+
+#: .\blog\templates\blog\filter_by_category.html:221
+msgid "Posts"
+msgstr "Articles"
+
+#: .\blog\templates\blog\post_list.html:7
+msgid "Derniers Articles"
+msgstr "Derniers Articles"
+
+#: .\blog\templates\blog\post_list.html:35
+#: .\blog\templates\blog\post_list.html:76
+msgid "Favori"
+msgstr "Favori"
+
+#: .\blog\templates\blog\post_list.html:37
+#: .\blog\templates\blog\post_list.html:79
+msgid "Ajouter aux favoris"
+msgstr "Ajouter aux favoris"
+
+#: .\blog\templates\blog\post_list.html:41
+msgid "Connectez-vous pour ajouter aux favoris"
+msgstr "Connectez-vous pour ajouter aux favoris"
+
+#: .\blog\templates\blog\post_list.html:45
+#: .\blog\templates\blog\post_list.html:82
+msgid "Favoris :"
+msgstr "Favoris :"
+
+#: .\blog\templates\blog\post_list.html:47
+msgid "Lire la suite"
+msgstr "Lire la suite"
+
+#: .\blog\views.py:26
 msgid "New user registered"
-msgstr ""
+msgstr "Nouvel utilisateur enregistré"
 
-#: .\blog\views.py:25
+#: .\blog\views.py:27
 msgid "Account created successfully!"
-msgstr ""
+msgstr "Compte créé avec succès !"
 
-#: .\blog\views.py:51
+#: .\blog\views.py:66
 msgid "Post created successfully!"
-msgstr ""
+msgstr "Article créé avec succès !"
 
-#: .\blog\views.py:61
+#: .\blog\views.py:76
 msgid "You don't have permission to edit this post"
-msgstr ""
-
-#: .\blog\views.py:68
-msgid "Post updated successfully!"
-msgstr ""
-
-#: .\blog\views.py:78
-msgid "You don't have permission to delete this post"
-msgstr ""
+msgstr "Vous n'avez pas la permission de modifier cet article"
 
 #: .\blog\views.py:83
+msgid "Post updated successfully!"
+msgstr "Article mis à jour avec succès !"
+
+#: .\blog\views.py:93
+msgid "You don't have permission to delete this post"
+msgstr "Vous n'avez pas la permission de supprimer cet article"
+
+#: .\blog\views.py:98
 msgid "Post deleted successfully!"
-msgstr ""
+msgstr "Article supprimé avec succès !"
 
-#: .\blog\views.py:89
+#: .\blog\views.py:104
 msgid "You have been logged out successfully."
-msgstr ""
+msgstr "Vous avez été déconnecté avec succès."
 
-#: .\blog_project\settings.py:88
+#: .\blog_project\settings.py:96
 msgid "English"
 msgstr "Anglais"
 
-#: .\blog_project\settings.py:89
+#: .\blog_project\settings.py:97
 msgid "French"
 msgstr "Français"
+
+#: .\blog_project\settings.py:98
+msgid "Italian"
+msgstr "Italien"

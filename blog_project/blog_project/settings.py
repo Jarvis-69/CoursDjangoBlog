@@ -95,6 +95,7 @@ LANGUAGE_CODE = 'en'
 LANGUAGES = [
     ('en', _('English')),
     ('fr', _('French')),
+    ('it', _('Italian')),
 ]
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale'),

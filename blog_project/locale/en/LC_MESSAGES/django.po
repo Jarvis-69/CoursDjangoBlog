@@ -1,10 +1,10 @@
 # English translations for Django Blog application
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Django Blog 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-04 17:16+0100\n"
-"PO-Revision-Date: 2024-12-04 16:30+0100\n"
+"POT-Creation-Date: 2024-12-05 11:35+0100\n"
+"PO-Revision-Date: 2024-12-05 16:45+0100\n"
 "Last-Translator: Mohamed <your_email@example.com>\n"
 "Language-Team: English <en@li.org>\n"
 "Language: en\n"
@@ -13,73 +13,128 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\blog\templates\blog\base.html:6 .\blog\templates\blog\base.html:14
+#: .\blog\templates\blog\base.html:7 .\blog\templates\blog\base.html:16
 msgid "Blog Django"
 msgstr "Django Blog"
 
-#: .\blog\templates\blog\base.html:16
+#: .\blog\templates\blog\base.html:18
+#: .\blog\templates\blog\filter_by_category.html:185
 msgid "Accueil"
 msgstr "Home"
 
-#: .\blog\templates\blog\base.html:18
+#: .\blog\templates\blog\base.html:19
+#: .\blog\templates\blog\filter_by_category.html:186
+msgid "Catégories"
+msgstr "Categories"
+
+#: .\blog\templates\blog\base.html:21
 msgid "Nouvel Article"
 msgstr "New Post"
 
-#: .\blog\templates\blog\base.html:19
+#: .\blog\templates\blog\base.html:22
 msgid "Déconnexion"
 msgstr "Logout"
 
-#: .\blog\templates\blog\base.html:21
+#: .\blog\templates\blog\base.html:24
 msgid "Admin"
 msgstr "Admin"
 
-#: .\blog\templates\blog\base.html:25
+#: .\blog\templates\blog\base.html:28
 msgid "Connexion"
 msgstr "Login"
 
-#: .\blog\templates\blog\base.html:26
+#: .\blog\templates\blog\base.html:29
 msgid "Inscription"
 msgstr "Register"
 
-#: .\blog\views.py:24
+#: .\blog\templates\blog\filter_by_category.html:205
+msgid "Filter by Category"
+msgstr "Filter by Category"
+
+#: .\blog\templates\blog\filter_by_category.html:207
+#, fuzzy
+#| msgid "Catégories"
+msgid "Categories"
+msgstr "Categories"
+
+#: .\blog\templates\blog\filter_by_category.html:209
+msgid "Toutes les catégories"
+msgstr "All categories"
+
+#: .\blog\templates\blog\filter_by_category.html:221
+msgid "Posts"
+msgstr "Posts"
+
+#: .\blog\templates\blog\post_list.html:7
+msgid "Derniers Articles"
+msgstr "Latest Posts"
+
+#: .\blog\templates\blog\post_list.html:35
+#: .\blog\templates\blog\post_list.html:76
+msgid "Favori"
+msgstr "Favorite"
+
+#: .\blog\templates\blog\post_list.html:37
+#: .\blog\templates\blog\post_list.html:79
+msgid "Ajouter aux favoris"
+msgstr "Add to favorites"
+
+#: .\blog\templates\blog\post_list.html:41
+msgid "Connectez-vous pour ajouter aux favoris"
+msgstr "Log in to add to favorites"
+
+#: .\blog\templates\blog\post_list.html:45
+#: .\blog\templates\blog\post_list.html:82
+msgid "Favoris :"
+msgstr "Favorites:"
+
+#: .\blog\templates\blog\post_list.html:47
+msgid "Lire la suite"
+msgstr "Read more"
+
+#: .\blog\views.py:26
 msgid "New user registered"
 msgstr "New user registered"
 
-#: .\blog\views.py:25
+#: .\blog\views.py:27
 msgid "Account created successfully!"
 msgstr "Account created successfully!"
 
-#: .\blog\views.py:51
+#: .\blog\views.py:66
 msgid "Post created successfully!"
 msgstr "Post created successfully!"
 
-#: .\blog\views.py:61
+#: .\blog\views.py:76
 msgid "You don't have permission to edit this post"
 msgstr "You don't have permission to edit this post"
 
-#: .\blog\views.py:68
+#: .\blog\views.py:83
 msgid "Post updated successfully!"
 msgstr "Post updated successfully!"
 
-#: .\blog\views.py:78
+#: .\blog\views.py:93
 msgid "You don't have permission to delete this post"
 msgstr "You don't have permission to delete this post"
 
-#: .\blog\views.py:83
+#: .\blog\views.py:98
 msgid "Post deleted successfully!"
 msgstr "Post deleted successfully!"
 
-#: .\blog\views.py:89
+#: .\blog\views.py:104
 msgid "You have been logged out successfully."
 msgstr "You have been logged out successfully."
 
-#: .\blog_project\settings.py:88
+#: .\blog_project\settings.py:96
 msgid "English"
 msgstr "English"
 
-#: .\blog_project\settings.py:89
+#: .\blog_project\settings.py:97
 msgid "French"
 msgstr "French"
+
+#: .\blog_project\settings.py:98
+msgid "Italian"
+msgstr "Italian"
 
 #~ msgid "Home"
 #~ msgstr "Home"

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter by Category</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Styles identiques */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1a73e8;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #155db2;
+        }
+
+        .navbar {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #1a73e8;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 100px auto 40px;
+            padding: 0 20px;
+        }
+
+        .categories {
+            margin-bottom: 40px;
+        }
+
+        .categories ul {
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .categories li {
+            background: #e8f0fe;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        .categories li a {
+            font-size: 14px;
+            color: #1a73e8;
+        }
+
+        .categories li a:hover {
+            color: #155db2;
+        }
+
+        .categories li[style*="font-weight: bold;"] {
+            background: #1a73e8;
+        }
+
+        .categories li[style*="font-weight: bold;"] a {
+            color: white;
+        }
+
+        .posts-section {
+            margin-top: 40px;
+        }
+
+        .posts-section ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .posts-section li {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .posts-section li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .post-category {
+            font-size: 12px;
+            color: #1a73e8;
+            background: #e8f0fe;
+            padding: 5px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .post-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .post-title:hover {
+            color: #1a73e8;
+        }
+
+        .post-excerpt {
+            margin-top: 10px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 1024px) {
+            .posts-section ul {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .posts-section ul {
+                grid-template-columns: 1fr;
+            }
+
+            .categories ul {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    {% load i18n %}
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">{% trans "Blog Django" %}</a>
+            <div class="nav-links">
+                 <a href="{% url 'post_list' %}">{% trans "Accueil" %}</a>
+                 <a href="{% url 'filter_by_category' %}">{% trans "Catégories" %}</a>
+                 {% if user.is_authenticated %}
+                     <a href="{% url 'post_new' %}">{% trans "Nouvel Article" %}</a>
+                     <a href="{% url 'logout' %}" class="nav-logout">{% trans "Déconnexion" %}</a>
+                     {% if user.is_staff %}
+                         <a href="{% url 'admin:index' %}" class="admin-link">{% trans "Admin" %}</a>
+                     {% endif %}
+                     <span class="nav-username">{{ user.username }}</span>
+                 {% else %}
+                 <a href="{% url 'login' %}">{% trans "Connexion" %}</a>
+                 <a href="{% url 'register' %}" class="register-link">{% trans "Inscription" %}</a>
+                 {% endif %}
+             </div>        
+            <form action="{% url 'set_language' %}" method="post" class="language-selector">
+             {% csrf_token %}
+             <input name="next" type="hidden" value="{{ redirect_to }}">
+             <select name="language" onchange="this.form.submit()">
+                 {% get_current_language as LANGUAGE_CODE %}
+                 {% get_available_languages as LANGUAGES %}
+                 {% for lang_code, lang_name in LANGUAGES %}
+                     <option value="{{ lang_code }}" {% if lang_code == LANGUAGE_CODE %}selected{% endif %}>
+                         {{ lang_name }}
+                     </option>
+                 {% endfor %}
+             </select>
+         </form>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>{% trans "Filter by Category" %}</h1>
+        <div class="categories">
+            <h2>{% trans "Categories" %}</h2>
+            <ul>
+                <li><a href="{% url 'filter_by_category' %}">{% trans "Toutes les catégories" %}</a></li>
+                {% for category in categories %}
+                    <li {% if current_category and current_category.name == category.name %}style="font-weight: bold;"{% endif %}>
+                        <a href="{% url 'filter_by_category_name' name=category.name %}">
+                            {{ category.name }} ({{ category.post_count }})
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>            
+        </div>
+
+        <div class="posts-section">
+            <h2>{% trans "Posts" %}</h2>
+            {% if posts %}
+                <ul>
+                    {% for post in posts %}
+                        <li>
+                            <div class="post-category">{{ post.category.name }}</div>
+                            <a href="#" class="post-title">{{ post.title }}</a>
+                            <p class="post-excerpt">{{ post.content|truncatewords:20 }}</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>{% trans "No posts available for this category" %}.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,27 +1,117 @@
 {% extends 'blog/base.html' %}
 {% load static %}
-
+{% load i18n %}
 {% block content %}
+{% load favorite_tags %}
 <section class="posts-section">
-    <h2 class="section-title">Derniers Articles</h2>
+    <h2 class="section-title">{% trans "Derniers Articles" %}</h2>
     
     <div class="posts-grid">
-        {% for post in posts %}
+        {% for item in posts_with_favorites %}
         <article class="post-card">
             <div class="post-content">
-                <span class="post-category">{{ post.category }}</span>
-                <h3><a href="{% url 'post_detail' post.slug %}" class="post-title">{{ post.title }}</a></h3>
+                <span class="post-category">{{ item.post.category }}</span>
+                <h3>
+                    <a href="{% url 'post_detail' item.post.slug %}" class="post-title">
+                        {{ item.post.title }}
+                    </a>
+                </h3>
                 <div class="post-meta">
-                    <span class="author-name">{{ post.author.username }}</span>
-                    <span class="post-date">{{ post.created_at|date:"d M Y" }}</span>
+                    <span class="author-name">{{ item.post.author.username }}</span>
+                    <span class="post-date">{{ item.post.created_at|date:"d M Y" }}</span>
                 </div>
-                {% if post.content %}
-                <p class="post-excerpt">{{ post.content|truncatewords:30 }}</p>
+                {% if item.post.content %}
+                <p class="post-excerpt">{{ item.post.content|truncatewords:30 }}</p>
                 {% endif %}
-                <a href="{% url 'post_detail' post.slug %}" class="read-more">Lire la suite →</a>
+                
+                <!-- Bouton Favori -->
+                {% if user.is_authenticated %}
+                    <button
+                        class="favorite-button"
+                        data-post-id="{{ item.post.id }}"
+                        data-is-favorited="{{ item.is_favorited }}"
+                    >
+                        {% if item.is_favorited %}
+                        ❤️ {% trans "Favori" %}
+                    {% else %}
+                        🤍 {% trans "Ajouter aux favoris" %}
+                    {% endif %}                    
+                    </button>
+                {% else %}
+                    <a href="{% url 'login' %}" class="login-to-favorite">{% trans "Connectez-vous pour ajouter aux favoris" %}</a>
+                {% endif %}
+                <!-- Fin Bouton Favori -->
+                
+                <span class="favorites-count">{% trans "Favoris :" %} {{ item.post.favorites.count }}</span>
+                
+                <a href="{% url 'post_detail' item.post.slug %}" class="read-more">{% trans "Lire la suite" %} →</a>
             </div>
         </article>
         {% endfor %}
     </div>
 </section>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const buttons = document.querySelectorAll(".favorite-button");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", function() {
+                const postId = this.getAttribute("data-post-id");
+                const isFavorited = this.getAttribute("data-is-favorited") === "true";
+                const favoritesCountSpan = this.nextElementSibling;
+
+                fetch(`/toggle-favorite/${postId}/`, {
+                    method: "POST",
+                    headers: {
+                        "X-CSRFToken": "{{ csrf_token }}",
+                        "Content-Type": "application/json",
+                    },
+                    credentials: "same-origin",
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === "added") {
+                        this.innerHTML = "❤️ {% trans 'Favori' %}";
+                        this.setAttribute("data-is-favorited", "true");
+                    } else {
+                        this.innerHTML = "🤍 {% trans 'Ajouter aux favoris' %}";
+                        this.setAttribute("data-is-favorited", "false");
+                    }
+                    favoritesCountSpan.innerHTML = `{% trans "Favoris :" %} ${data.favorites_count}`;
+                })
+                .catch(error => console.error("Error:", error));
+            });
+        });
+    });
+</script>
+
+<style>
+    /* Optionnel : Ajoutez ici vos styles pour le bouton */
+    .favorite-button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .favorite-button:hover {
+        color: #e63946;
+    }
+
+    .favorites-count {
+        display: block;
+        font-size: 14px;
+        color: #555;
+        margin-top: 5px;
+    }
+
+    .login-to-favorite {
+        font-size: 14px;
+        color: #555;
+        text-decoration: underline;
+    }
+</style>
 {% endblock %}

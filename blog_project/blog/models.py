@@ -35,6 +35,7 @@ class Post(models.Model):
     content = models.TextField(verbose_name="Contenu")
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Date de création")
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Dernière modification")
+    favorites = models.ManyToManyField(User, related_name='favorite_posts', blank=True, verbose_name="Favoris")
     author = models.ForeignKey(
         User, 
         on_delete=models.CASCADE, 
